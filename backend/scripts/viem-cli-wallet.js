@@ -73,17 +73,14 @@ async function main() {
   // 这会创建一个新的私钥和对应的以太坊地址
   // const wallet = Wallet.random();
   // 使用 generatePrivateKey 生成随机私钥
-  // const privateKey = require('viem/accounts').generatePrivateKey();
+  const privateKey = require('viem/accounts').generatePrivateKey();
   // 从私钥创建钱包以获取地址
-  // const wallet = require('viem/accounts').privateKeyToAccount(privateKey);
-  // const address = wallet.address;
+  const wallet = require('viem/accounts').privateKeyToAccount(privateKey);
+  const address = wallet.address;
   // 获取私钥：用于签名交易，必须妥善保管
   // const privateKey = wallet.privateKey;
-  const privateKey = "0x501fef04a34ce6f51f9d25e72b56523a6f5f808c406caf377e65d3551f44de1b";
-  // // 获取地址：用于接收资金和查询余额
+   // // 获取地址：用于接收资金和查询余额
   // const address = wallet.address;
-  const address = "0x5Ad41772bd5E89297C596d1b4f457B510030dDdE";
-  const account = privateKeyToAccount(privateKey);
 
   // 显示生成的私钥和地址
   // console.log(`私钥: ${privateKey}`);
@@ -136,7 +133,7 @@ async function main() {
   const walletClient = createWalletClient({
     chain: sepolia,
     transport: http('https://ethereum-sepolia-rpc.publicnode.com'),
-    account: account // 使用完整的账户对象，包含私钥
+    account: wallet // 使用完整的账户对象，包含私钥
   });
 
   // 查询代币信息
