@@ -1,0 +1,21 @@
+{
+  "name": "viem-cli-wallet",
+  "version": "1.0.0",
+  "description": "A CLI wallet built with Viem for ERC20 transfers",
+  "main": "scripts/viem-cli-wallet.js",
+  "scripts": {
+    "wallet": "node scripts/viem-cli-wallet.js"
+  },
+  "keywords": [
+    "web3",
+    "viem",
+    "wallet",
+    "erc20",
+    "sepolia"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.17.0"
+  }
+}
