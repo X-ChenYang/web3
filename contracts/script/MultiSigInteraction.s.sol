@@ -37,8 +37,8 @@ contract MultiSigInteraction is Script {
         // 步骤1：使用账户1提交交易提案
         console.log("\n=== Step 1: Propose Transaction ===");
         // 开始广播交易，使用环境变量中的 PRIVATE_KEY（账户1私钥）
-        // vm.startBroadcast(vm.envUint("PRIVATE_KEY")); // 使用默认私钥（账户1）
-        vm.startBroadcast(0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80);
+        vm.startBroadcast(vm.envUint("PRIVATE_KEY")); // 使用默认私钥（账户1）
+        // vm.startBroadcast(输入私钥地址测试);
         // 调用 proposal 函数提交交易提案
         // 参数：
         // - recipient: 接收地址
@@ -53,8 +53,8 @@ contract MultiSigInteraction is Script {
         // 步骤2：使用账户2确认交易
         console.log("\n=== Step 2: Confirm Transaction ===");
         // 开始广播交易，使用环境变量中的 PRIVATE_KEY2（账户2私钥）
-        // vm.startBroadcast(vm.envUint("PRIVATE_KEY2")); // 使用第二个私钥（账户2）
-        vm.startBroadcast(0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d);
+        vm.startBroadcast(vm.envUint("PRIVATE_KEY2")); // 使用第二个私钥（账户2）
+        // vm.startBroadcast(输入私钥地址测试);
         // 调用 confirm 函数确认交易
         // 参数：
         // - txId: 交易ID
@@ -67,8 +67,8 @@ contract MultiSigInteraction is Script {
         // 步骤3：执行交易
         console.log("\n=== Step 3: Execute Transaction ===");
         // 开始广播交易，使用账户1私钥（任何人都可以执行）
-        // vm.startBroadcast(vm.envUint("PRIVATE_KEY")); // 任何人都可以执行
-        vm.startBroadcast(0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80);
+        vm.startBroadcast(vm.envUint("PRIVATE_KEY")); // 任何人都可以执行
+        // vm.startBroadcast(输入私钥地址测试);
         // 调用 execute 函数执行交易
         // 参数：
         // - txId: 交易ID
