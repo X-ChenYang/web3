@@ -1,0 +1,23 @@
+{
+  "name": "web3-erc20-project",
+  "version": "1.0.0",
+  "description": "本项目是一个完整的 Web3 应用，包含 ERC20 Token 合约、后端索引服务和前端展示界面。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X-ChenYang/web3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/X-ChenYang/web3/issues"
+  },
+  "homepage": "https://github.com/X-ChenYang/web3#readme",
+  "dependencies": {
+    "viem": "^2.47.6"
+  }
+}
