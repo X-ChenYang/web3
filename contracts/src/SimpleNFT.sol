@@ -49,7 +49,7 @@ contract SimpleNFT {
      * @param uri NFT的URI
      * @return tokenId 铸造的代币ID
      */
-    function mintNFT(address to, string memory uri) public returns (uint256) {
+    function mintNFT(address to, string memory uri) public virtual returns (uint256) {
         // 获取当前代币ID
         uint256 tokenId = _tokenIdCounter;
         // 增加代币ID计数器
