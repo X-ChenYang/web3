@@ -4,10 +4,6 @@ pragma solidity ^0.8.20;
 import "./uniswap/IUniswapV2Pair.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-interface IUniswapV2Callee {
-    function uniswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;
-}
-
 contract FlashSwapArbitrage is IUniswapV2Callee {
     event ArbitrageExecuted(uint amountBorrowed, uint amountExchanged, uint profit);
 

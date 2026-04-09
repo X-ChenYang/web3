@@ -1,5 +1,5 @@
 [profile.default]
-src = "src"
+src = "src/staking"
 out = "out"
 libs = ["lib"]
 
@@ -17,3 +17,5 @@ anvil = "http://localhost:8545"
 
 [etherscan]
 sepolia = { key = "${ETHERSCAN_API_KEY}" }
+
+

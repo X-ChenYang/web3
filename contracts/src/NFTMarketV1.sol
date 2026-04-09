@@ -136,10 +136,10 @@ contract NFTMarketV1 is Initializable, OwnableUpgradeable, UUPSUpgradeable {
      * @dev 升级到新实现
      * @param newImplementation 新实现合约地址
      */
-    function upgradeTo(address newImplementation) external onlyOwner {
+    function upgradeTo(address newImplementation) external onlyOwner virtual {
         // 必须先授权（UUPS强制要求）
         _authorizeUpgrade(newImplementation);
         // 执行真正的升级操作
-        _upgradeToAndCall(newImplementation, "");
+        upgradeToAndCall(newImplementation, "");
     }
 }
