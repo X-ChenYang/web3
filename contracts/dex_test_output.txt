@@ -1,0 +1,16 @@
+Compiling 2 files with Solc 0.8.24
+Solc 0.8.24 finished in 1.24s
+Compiler run successful!
+
+Ran 8 tests for test/SimpleLeverageDEXTest.t.sol:SimpleLeverageDEXTest
+[PASS] testCalculatePnL() (gas: 154533)
+[PASS] testCannotLiquidateProfitablePosition() (gas: 156071)
+[PASS] testCannotOpenDuplicatePosition() (gas: 165023)
+[PASS] testCloseLongPositionWithProfit() (gas: 139222)
+[PASS] testCloseShortPositionWithLoss() (gas: 137303)
+[PASS] testLiquidation() (gas: 137282)
+[PASS] testOpenLongPosition() (gas: 145551)
+[PASS] testOpenShortPosition() (gas: 145524)
+Suite result: ok. 8 passed; 0 failed; 0 skipped; finished in 1.90ms (2.01ms CPU time)
+
+Ran 1 test suite in 1.83s (1.90ms CPU time): 8 tests passed, 0 failed, 0 skipped (8 total tests)
