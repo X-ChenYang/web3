@@ -1,5 +1,5 @@
 [profile.default]
-src = "src/staking"
+src = "src"
 out = "out"
 libs = ["lib"]
 
