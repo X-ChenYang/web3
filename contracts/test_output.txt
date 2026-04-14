@@ -1,0 +1,10 @@
+No files changed, compilation skipped
+
+Ran 4 tests for test/GovernanceTest.t.sol:GovernanceTest
+[PASS] testBankDeposit() (gas: 18844)
+[PASS] testGovernanceProcess() (gas: 258685)
+[PASS] testProposalState() (gas: 143131)
+[PASS] testVotingToken() (gas: 20660)
+Suite result: ok. 4 passed; 0 failed; 0 skipped; finished in 4.28ms (1.83ms CPU time)
+
+Ran 1 test suite in 6.88s (4.28ms CPU time): 4 tests passed, 0 failed, 0 skipped (4 total tests)

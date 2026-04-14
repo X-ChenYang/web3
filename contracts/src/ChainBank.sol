@@ -177,19 +177,19 @@ contract ChainBank {
     // 获取前10名用户
     function getTopUsers() public view returns (address[] memory, uint256[] memory) {
         address[] memory users = new address[](nodeCount);
-        uint256[] memory balances = new uint256[](nodeCount);
+        uint256[] memory userBalances = new uint256[](nodeCount);
         
         uint256 current = head;
         uint256 index = 0;
         
         while (current != 0 && index < MAX_TOP_USERS) {
             users[index] = userNodes[current].user;
-            balances[index] = userNodes[current].balance;
+            userBalances[index] = userNodes[current].balance;
             current = userNodes[current].next;
             index++;
         }
         
-        return (users, balances);
+        return (users, userBalances);
     }
     
     // 获取指定用户的余额
